@@ -19,7 +19,7 @@ const IndexPage: NextPage<Props> = ({ countries }) => {
       <hr />
       <Image
         className="h-8 mx-auto m-12 md:mt-16"
-        src="//data.commercelayer.app/assets/logos/full-logo/black/commercelayer_full_logo_black.svg"
+        src=""
         alt="Commerce Layer Logo"
         loading="eager"
         width={200}

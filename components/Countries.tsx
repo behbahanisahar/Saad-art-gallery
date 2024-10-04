@@ -14,7 +14,7 @@ const Countries: React.FC<Props> = ({ items }) => {
       <h1 className="text-lg mb-24 uppercase text-center">Choose your location/region</h1>
       <div className="grid grid-cols-2 gap-y-14 gap-x-16 md:grid-cols-2 md:gap-y-8 md:gap-x-4">
         {items.map(({ name, defaultLocale, code }, key) => {
-          const lang = _.first(defaultLocale.toLowerCase().split(","));
+          const lang = _.first(defaultLocale?.toLowerCase().split(","));
           const countryCode = code.toLowerCase();
 
           return (
@@ -30,7 +30,7 @@ const Countries: React.FC<Props> = ({ items }) => {
             >
               <div className="text-center">
                 <p className="text-lg font-bold">{name}</p>
-                <p className="text-xs pt-1">{locale[lang as string].languageName}</p>
+                <p className="text-xs pt-1">{locale[lang as string]?.languageName}</p>
               </div>
             </Link>
           );

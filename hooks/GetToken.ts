@@ -20,7 +20,7 @@ export const useGetToken: UseGetToken = ({ scope, countryCode }) => {
         const auth = await authentication("client_credentials", {
           clientId,
           slug,
-          scope: `market:${scope}`
+          scope: `market:id:${scope}`
         });
         setToken(auth?.accessToken);
         Cookies.set(`clAccessToken-${countryCode}`, auth?.accessToken, {

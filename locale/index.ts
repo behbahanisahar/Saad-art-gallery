@@ -7,7 +7,7 @@ type Locale = {
 const locale: Locale = {
   "en-us": {
     languageName: "English",
-    welcome: "Hey, there",
+    welcome: "Welcome to Saadvandi Art Gallery",
     addToCart: "Add to cart",
     available: "available",
     notAvailable: "Not available",

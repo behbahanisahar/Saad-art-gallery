@@ -21,7 +21,7 @@ const CountrySelector: React.FC<Props> = ({ options }) => {
       value: code.toLowerCase(),
       name,
       image,
-      defaultLocale: defaultLocale.toLowerCase()
+      defaultLocale: defaultLocale?.toLowerCase()
     };
   });
   const selectedOption = _.first(optionComponents.filter(({ value }) => value === countryCode));
